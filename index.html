@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header class="header">
+    <div class="container">
+        <div class="header__column">
+            <div class="header__inner">
+                <div class="header__logo">
+                    <a class="logo" href="#">
+                        <svg class="logo__img">
+                            <use href='images/sprite.svg#logo-header'></use>
+                        </svg>
+                    </a>
+
+                    <div class="header__logo-text">
+                        Средства индивидуальной защиты оптом и в розницу
+                    </div>
+                </div>
+
+                <div class="header__contacts">
+                    <div class="header__phone">
+                        <div class="header__phone-ico">
+                            <svg class="header__phone-svg">
+                                <use href='images/sprite.svg#phone'></use>
+                            </svg>
+                        </div>
+                        <a class="header__phone-link" href="tel:+79876543210">+7 (987) 654-32-10</a>
+                        <button class="header__order-phone phone-order" type="button">Заказать звонок</button>
+                    </div>
+                    <button class="header__order-phone" type="button">Заказать звонок</button>
+                    <a class="header__download" href="#">
+                        <span>
+                            <svg class="header__download-ico">
+                                <use href='images/sprite.svg#download'></use>
+                            </svg>
+                            Скачать каталог
+                        </span>
+                    </a>
+                    <button class="hamburger">
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="header__box">
+                <div class="header__content">
+                    <h1 class="header__title">Изготавливаем и поставляем СИЗ широкого назначения и любых видов</h1>
+                    <p class="header__text">Для производств, промышленности, медицинских, образовательных,
+                        государственных
+                        или
+                        иных учреждений, а также для бытовых нужд. В том числе СИЗ от COVID-19
+                    </p>
+                    <button class="header__btn" type="button">Получить коммерческое предложение</button>
+                    <a class="header__download download" href="#">
+                        <span>
+                            <svg class="header__download-ico">
+                                <use href='images/sprite.svg#download'></use>
+                            </svg>
+                            Скачать каталог
+                        </span>
+                    </a>
+                </div>
+                <img class="header__img" src="images/doctor.png" alt="">
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<!-- <svg class="telegram">
+        <use href='images/sprite.svg#telegram'></use>
+    </svg> -->
+    <div class="benefits">
+    <div class="container">
+        <div class="benefits__items">
+            <div class="benefits__item">
+                <svg class="benefits__item-ico benefits__item-ico-1">
+                    <use href='images/sprite.svg#benefit-1'></use>
+                </svg>
+                <div class="benefits__item-text">Доступные цены при высоком качестве</div>
+            </div>
+            <div class="benefits__item">
+                <svg class="benefits__item-ico benefits__item-ico-2">
+                    <use href='images/sprite.svg#benefit-2'></use>
+                </svg>
+                <div class="benefits__item-text">Бесплатная доставка по России</div>
+            </div>
+            <div class="benefits__item">
+                <svg class="benefits__item-ico benefits__item-ico-3">
+                    <use href='images/sprite.svg#benefit-3'></use>
+                </svg>
+                <div class="benefits__item-text">Все продукция сертифицирована</div>
+            </div>
+
+            <div class="benefits__item">
+                <svg class="benefits__item-ico benefits__item-ico-4">
+                    <use href='images/sprite.svg#benefit-4'></use>
+                </svg>
+                <div class="benefits__item-text">Гибкая система скидок</div>
+            </div>
+        </div>
+    </div>
+</div>
+    <section class="catalog">
+    <div class="container">
+        <h2 class="catalog__title title">Каталог</h2>
+        <div class="catalog__grid">
+            <div class="catalog__item">
+                <div class="catalog__images">
+                    <div class="catalog__circle"></div>
+                    <img class="catalog__img" src="images/catalog/1.png" alt="">
+                </div>
+                <div class="catalog__descr">Перчатки одноразовые (нитрил, винил, латекс)</div>
+            </div>
+            <div class="catalog__item">
+                <div class="catalog__images">
+                    <div class="catalog__circle"></div>
+                    <img class="catalog__img" src="images/catalog/2.png" alt="">
+                </div>
+                <div class="catalog__descr">Одноразовые халаты Комбинезоны «Каспер»</div>
+            </div>
+            <div class="catalog__item">
+                <div class="catalog__images">
+                    <div class="catalog__circle"></div>
+                    <img class="catalog__img" src="images/catalog/3.png" alt="">
+                </div>
+                <div class="catalog__descr">Защитные комбинезоны из мембраны типа «Taywek»</div>
+            </div>
+            <div class="catalog__item">
+                <div class="catalog__images">
+                    <div class="catalog__circle"></div>
+                    <img class="catalog__img" src="images/catalog/4.png" alt="">
+                </div>
+                <div class="catalog__descr">Защита рук (перчатки, рукавицы и так далее)</div>
+            </div>
+            <div class="catalog__item">
+                <div class="catalog__images">
+                    <div class="catalog__circle"></div>
+                    <img class="catalog__img" src="images/catalog/5.png" alt="">
+                </div>
+                <div class="catalog__descr">Защита органов зрения</div>
+            </div>
+            <div class="catalog__item">
+                <div class="catalog__images">
+                    <div class="catalog__circle"></div>
+                    <img class="catalog__img" src="images/catalog/6.png" alt="">
+                </div>
+                <div class="catalog__descr">Защита органов слуха</div>
+            </div>
+            <div class="catalog__item">
+                <div class="catalog__images">
+                    <div class="catalog__circle"></div>
+                    <img class="catalog__img" src="images/catalog/7.png" alt="">
+                </div>
+                <div class="catalog__descr">Специальная одежда</div>
+            </div>
+            <div class="catalog__item">
+                <div class="catalog__images">
+                    <div class="catalog__circle"></div>
+                    <img class="catalog__img" src="images/catalog/8.png" alt="">
+                </div>
+                <div class="catalog__descr">Специальная обувь</div>
+            </div>
+            <div class="catalog__item">
+                <div class="catalog__images">
+                    <div class="catalog__circle"></div>
+                    <img class="catalog__img" src="images/catalog/9.png" alt="">
+                </div>
+                <div class="catalog__descr">Средства дезинфекции, антисептики</div>
+            </div>
+            <div class="catalog__item">
+                <div class="catalog__images">
+                    <div class="catalog__circle"></div>
+                    <img class="catalog__img" src="images/catalog/10.png" alt="">
+                </div>
+                <div class="catalog__descr">Защита головы</div>
+            </div>
+            <div class="catalog__item">
+                <div class="catalog__images">
+                    <div class="catalog__circle"></div>
+                    <img class="catalog__img" src="images/catalog/11.png" alt="">
+                </div>
+                <div class="catalog__descr">Защита органов дыхания</div>
+            </div>
+            <div class="catalog__item">
+                <div class="catalog__images">
+                    <div class="catalog__circle"></div>
+                    <img class="catalog__img" src="images/catalog/12.png" alt="">
+                </div>
+                <div class="catalog__descr">Хозтовары, инвентарь, мебель</div>
+            </div>
+        </div>
+    </div>
+</section>
+    <section class="sertificates">
+    <div class="container">
+        <h2 class="sertificates__title">Вся наша продукция сертифицирована</h2>
+        <div class="swiper-sertificates-inner">
+            <div class="swiper-sertificates">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="sertificates__item">
+                            <div class="sertificates__item-wrapper">
+                                <img class="sertificates__img" src="images/sertificates/1.png" alt="">
+                            </div>
+                            <div class="sertificates__descr">
+                                Сертификат соответствия МСТRUОС01Н006461
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="sertificates__item">
+                            <div class="sertificates__item-wrapper">
+                                <img class="sertificates__img" src="images/sertificates/2.png" alt="">
+                            </div>
+                            <div class="sertificates__descr">
+                                Сертификат соответствия МСТRUОС01Н006461
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="sertificates__item">
+                            <div class="sertificates__item-wrapper">
+                                <img class="sertificates__img" src="images/sertificates/3.png" alt="">
+                            </div>
+                            <div class="sertificates__descr">
+                                Сертификат соответствия МСТRUОС01Н006461
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="sertificates__item">
+                            <div class="sertificates__item-wrapper">
+                                <img class="sertificates__img" src="images/sertificates/4.png" alt="">
+                            </div>
+                            <div class="sertificates__descr">
+                                Сертификат соответствия МСТRUОС01Н006461
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="sertificates__item">
+                            <div class="sertificates__item-wrapper">
+                                <img class="sertificates__img" src="images/sertificates/5.png" alt="">
+                            </div>
+                            <div class="sertificates__descr">
+                                Сертификат соответствия МСТRUОС01Н006461
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-prev">
+                <svg class="header__phone-svg">
+                    <use href='images/sprite.svg#arrow-left'></use>
+                </svg>
+            </div>
+            <div class="swiper-button-next">
+                <svg class="header__phone-svg">
+                    <use href='images/sprite.svg#arrow-right'></use>
+                </svg>
+            </div>
+        </div>
+    </div>
+</section>
+    <section class="order">
+    <div class="container">
+        <div class="order-banner">
+            <div class="order-banner__content">
+                <h3 class="order-banner__title">Хотите заказать продукцию или узнать про скидки и акции?</h3>
+                <div class="order-banner__text">Оставьте заявку и мы оперативно перезвоним вам</div>
+            </div>
+            <button class="order-banner__btn" type="button">Получить коммерческое предложение</button>
+        </div>
+
+        <div class="order-partners">
+            <div class="order-partners__text"><span>Среди наших клиентов</span>
+                есть большие, средние и маленькие компании
+            </div>
+            <div class="order-partners__grid">
+                <div class="order-partners__item">
+                    <img class="order-partners__img" src="images/partners/1.png" alt="">
+                </div>
+
+                <div class="order-partners__item">
+                    <img class="order-partners__img" src="images/partners/2.png" alt="">
+                </div>
+                <div class="order-partners__item">
+                    <img class="order-partners__img" src="images/partners/3.png" alt="">
+                </div>
+                <div class="order-partners__item">
+                    <img class="order-partners__img" src="images/partners/4.png" alt="">
+                </div>
+                <div class="order-partners__item">
+                    <img class="order-partners__img" src="images/partners/5.png" alt="">
+                </div>
+                <div class="order-partners__item">
+                    <img class="order-partners__img" src="images/partners/6.png" alt="">
+                </div>
+                <div class="order-partners__item">
+                    <img class="order-partners__img" src="images/partners/7.png" alt="">
+                </div>
+                <div class="order-partners__item">
+                    <img class="order-partners__img" src="images/partners/8.png" alt="">
+                </div>
+
+                <div class="order-partners__item">
+                    <img class="order-partners__img" src="images/partners/9.png" alt="">
+                </div>
+                <div class="order-partners__item">
+                    <img class="order-partners__img" src="images/partners/1.png" alt="">
+                </div>
+                <div class="order-partners__item">
+                    <img class="order-partners__img" src="images/partners/2.png" alt="">
+                </div>
+                <div class="order-partners__item">
+                    <img class="order-partners__img" src="images/partners/3.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="order__blocks">
+            <div class="order-block order-block-1">
+                <h3 class="order-block__title">Доставка</h3>
+                <ul class="order-block__list">
+                    <li class="order-block__list-item">
+                        <div class="order-block__ico">
+                            <svg class="order-block__svg">
+                                <use href='images/sprite.svg#checked'></use>
+                            </svg>
+                        </div>
+                        <div class="order-block__info"><span>Бесплатно по Москве:</span> <br>
+                            в течение 24 часов после оплаты</div>
+                    </li>
+                    <li class="order-block__list-item">
+                        <div class="order-block__ico">
+                            <svg class="order-block__svg">
+                                <use href='images/sprite.svg#checked'></use>
+                            </svg>
+                        </div>
+                        <div class="order-block__info">
+                            <span>Бесплатно по России:</span>
+                            от 3 до 14 дней в зависимости от выбранной транспортной компании
+                        </div>
+
+                    </li>
+                </ul>
+
+                <svg class="order-ico">
+                    <use href='images/sprite.svg#order'></use>
+                </svg>
+            </div>
+            <div class="order-block order-block-2">
+                <h3 class="order-block__title">Оплата</h3>
+                <ul class="order-block__list">
+                    <li class="order-block__list-item">
+                        <div class="order-block__ico">
+                            <svg class="order-block__svg">
+                                <use href='images/sprite.svg#checked'></use>
+                            </svg>
+                        </div>
+                        <div class="order-block__info">Наличным и безналичным расчетом</div>
+                    </li>
+                    <li class="order-block__list-item">
+                        <div class="order-block__ico">
+                            <svg class="order-block__svg">
+                                <use href='images/sprite.svg#checked'></use>
+                            </svg>
+                        </div>
+
+                        <div class="order-block__info">Работаем по договору</div>
+                    </li>
+                    <li class="order-block__list-item">
+                        <div class="order-block__ico">
+                            <svg class="order-block__svg">
+                                <use href='images/sprite.svg#checked'></use>
+                            </svg>
+                        </div>
+
+                        <div class="order-block__info">Работаем по договору</div>
+                    </li>
+                </ul>
+                <svg class="pay-ico">
+                    <use href='images/sprite.svg#pay'></use>
+                </svg>
+            </div>
+        </div>
+    </div>
+</section>
+    <section class="rewiews">
+    <div class="container">
+        <h3 class="rewiews__title">Отзывы</h3>
+        <div class="swiper-rewiews">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="rewiews__item">
+
+                        <div class="rewiews__item-inner">
+                            <div class="rewiews__item-imgwrapper">
+                                <img class="rewiews__item-img" src="images/partners/3.png" alt="">
+                            </div>
+                            <div class="rewiews__item-content">
+                                <div class="rewiews__item-name">АйТи. Бизнес решения</div>
+                                <div class="rewiews__item-author">Генеральный директор А.Е. Лапшин</div>
+                                <p class="rewiews__item-text">
+                                    «Порадовала быстрая доставка, ожидания оправдались на 100%» Для себя мы отметили
+                                    профессионализм команды, оперативное включение в процесс, реализацию интересных
+                                    нестандартных решений и полную отдачу в проекте. Желаю компании успехов в
+                                    автоматизации бизнес-процессов и выражаю надежду на продолжение сотрудничества.
+
+                                <p>
+                                <div class="rewiews__item-blanc">Смотреть отзыв на бланке компании</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="rewiews__item">
+
+                        <div class="rewiews__item-inner">
+                            <div class="rewiews__item-imgwrapper">
+                                <img class="rewiews__item-img" src="images/partners/3.png" alt="">
+                            </div>
+                            <div class="rewiews__item-content">
+                                <div class="rewiews__item-name">АйТи. Бизнес решения</div>
+                                <div class="rewiews__item-author">Генеральный директор А.Е. Лапшин</div>
+                                <p class="rewiews__item-text">
+                                    «Порадовала быстрая доставка, ожидания оправдались на 100%» Для себя мы отметили
+                                    профессионализм команды, оперативное включение в процесс, реализацию интересных
+                                    нестандартных решений и полную отдачу в проекте. Желаю компании успехов в
+                                    автоматизации бизнес-процессов и выражаю надежду на продолжение сотрудничества.
+
+                                <p>
+                                <div class="rewiews__item-blanc">Смотреть отзыв на бланке компании</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="rewiews__item">
+
+                        <div class="rewiews__item-inner">
+                            <div class="rewiews__item-imgwrapper">
+                                <img class="rewiews__item-img" src="images/partners/3.png" alt="">
+                            </div>
+                            <div class="rewiews__item-content">
+                                <div class="rewiews__item-name">АйТи. Бизнес решения</div>
+                                <div class="rewiews__item-author">Генеральный директор А.Е. Лапшин</div>
+                                <p class="rewiews__item-text">
+                                    «Порадовала быстрая доставка, ожидания оправдались на 100%» Для себя мы отметили
+                                    профессионализм команды, оперативное включение в процесс, реализацию интересных
+                                    нестандартных решений и полную отдачу в проекте. Желаю компании успехов в
+                                    автоматизации бизнес-процессов и выражаю надежду на продолжение сотрудничества.
+
+                                <p>
+                                <div class="rewiews__item-blanc">Смотреть отзыв на бланке компании</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="rewiews__item">
+
+                        <div class="rewiews__item-inner">
+                            <div class="rewiews__item-imgwrapper">
+                                <img class="rewiews__item-img" src="images/partners/3.png" alt="">
+                            </div>
+                            <div class="rewiews__item-content">
+                                <div class="rewiews__item-name">АйТи. Бизнес решения</div>
+                                <div class="rewiews__item-author">Генеральный директор А.Е. Лапшин</div>
+                                <p class="rewiews__item-text">
+                                    «Порадовала быстрая доставка, ожидания оправдались на 100%» Для себя мы отметили
+                                    профессионализм команды, оперативное включение в процесс, реализацию интересных
+                                    нестандартных решений и полную отдачу в проекте. Желаю компании успехов в
+                                    автоматизации бизнес-процессов и выражаю надежду на продолжение сотрудничества.
+
+
+                                <p>
+                                <div class="rewiews__item-blanc">Смотреть отзыв на бланке компании</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-prev">
+                <svg class="header__phone-svg">
+                    <use href='images/sprite.svg#arrow-left'></use>
+                </svg>
+            </div>
+            <div class="swiper-button-next">
+                <svg class="header__phone-svg">
+                    <use href='images/sprite.svg#arrow-right'></use>
+                </svg>
+            </div>
+        </div>
+    </div>
+</section>
+    <section class="about">
+    <div class="container">
+        <div class="about__inner">
+            <div class="about__grid">
+                <div class="about__item">
+                    <svg class="about-ico1">
+                        <use href='images/sprite.svg#about-1'></use>
+                    </svg>
+                    <div class="about__item-text"><span>Более 900 клиентов</span> на территории Московского региона
+                    </div>
+                </div>
+                <div class="about__item">
+                    <svg class="about-ico2">
+                        <use href='images/sprite.svg#about-2'></use>
+                    </svg>
+                    <div class="about__item-text">Принцип «одного окна» – <span>комплексная работа со всеми
+                            поставщиками</span></div>
+                </div>
+                <div class="about__item">
+                    <svg class="about-ico3">
+                        <use href='images/sprite.svg#about-3'></use>
+                    </svg>
+                    <div class="about__item-text">Индивидуальная работа и <span>гибкий подход к вашим задачам</span>
+                    </div>
+                </div>
+                <div class="about__item">
+                    <svg class="about-ico3">
+                        <use href='images/sprite.svg#about-4'></use>
+                    </svg>
+                    <div class="about__item-text">Профессинальная команда, <span>способная решить любой вопрос</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about__form">
+                <svg class="about-ico5">
+                    <use href='images/sprite.svg#about-5'></use>
+                </svg>
+                <h3 class="about__title">Готовы начать сотрудничество?</h3>
+                <p class="about__text">Напишите нам и мы вышлем вам на почту наше коммерческое предложение в этот же
+                    день.</p>
+                <button class="about__btn" type="button">Написать прямо сейчас</button>
+            </div>
+        </div>
+    </div>
+</section>
+    <section class="contacts">
+    <div class="container">
+        <h2 class="contacts__title">Контактная информация</h2>
+        <div class="contacts__block">
+            <div class="contacts__info">
+                <div class="contacts__info-item">
+                    <div class="contacts__subtitle">Центральный офис, склад и лаборатория</div>
+                    <address class="contacts__address">Коломна, пр. Кирова, дом 4А</address>
+                </div>
+                <div class="contacts__info-item">
+                    <div class="contacts__subtitle">Электронная почта</div>
+                    <a class="contacts__email" href="mailto:corp@raundlogistik.com">corp@raundlogistik.com</a>
+                </div>
+                <div class="contacts__subtitle">Телефон</div>
+                <a class="contacts__phone" href="tel:+79030075163">+7 (903) 007-51-63</a>
+                <button class="contacts__btn" type="button">Обратный звонок</button>
+            </div>
+
+            <div class="contacts__map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d570.8213657824729!2d38.766302964138845!3d55.09076537056659!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414a70e9500c4e9d%3A0x11351cf62c6c6131!2z0JrQuNGA0L7QstCwINC_0YDQvtGB0L8uLCA00LAsINCa0L7Qu9C-0LzQvdCwLCDQnNC-0YHQutC-0LLRgdC60LDRjyDQvtCx0LsuLCAxNDA0MDU!5e0!3m2!1sru!2sru!4v1629461897091!5m2!1sru!2sru"
+                    allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+
+        <div class="footer__inner">
+            <a class="footer__logo" href="#">
+                <svg class="footer__logo-img">
+                    <use href='images/sprite.svg#logo-footer'></use>
+                </svg>
+            </a>
+
+            <div class="footer__col-1">
+                <div class="footer__subtitle">Реквизиты</div>
+                <div class="footer__info">
+                    <div class="footer__info-item">ООО «Раунд Логистик»</div>
+                    <div class="footer__info-item">ИНН: 5022048950</div>
+                    <div class="footer__info-item">ОГРН: 1155022001925</div>
+                </div>
+            </div>
+
+            <div class="footer__col-2">
+                <div class="footer__subtitle">Банк</div>
+                <div class="footer__info">
+                    <div class="footer__info-item"> ФИЛИАЛ № 7701 БАНКА ВТБ (ПАО)</div>
+                    <div class="footer__info-item">БИК: 044525745</div>
+                    <div class="footer__info-item">Кор.счет: 301 018 103 452 500 00745</div>
+                    <div class="footer__info-item">Расчетный счет:407 028 105 000 001 017 71</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer__copy">
+            © ООО «Раунд Логистик», 2021
+        </div>
+    </div>
+</footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>

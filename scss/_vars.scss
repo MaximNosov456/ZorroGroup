@@ -1,0 +1,72 @@
+$accent: #0036b0;
+
+%montserrat-500 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+}
+
+%montserrat-700 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+}
+
+%montserrat-800 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+}
+
+%flex-sb {
+    display: flex;
+    justify-content: space-between;
+}
+
+%checkbox-hidden {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+    width: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+%pos-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin icon-left($width, $height) {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: $width;
+    height: $height;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+@mixin icon-right($width, $height) {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: $width;
+    height: $height;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+@mixin background($pos-x, $pos-y) {
+    background-size: cover;
+    background-position: $pos-x $pos-y;
+    background-repeat: no-repeat;
+}
+
+@mixin fit($width, $height) {
+    width: $width;
+    height: $height;
+    object-fit: cover;
+}

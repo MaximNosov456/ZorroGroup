@@ -1,0 +1,143 @@
+.rewiews {
+    background: #d9eef7;
+    padding: 80px 0;
+    @media (max-width: 768px) {
+        padding: 40px 0;
+    }
+    .swiper-rewiews {
+        overflow: hidden;
+        position: relative;
+    }
+
+    .swiper-slide {
+        height: auto;
+        background: linear-gradient(90deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.5) 100%);
+    }
+
+    .swiper-slide-active {
+        background: #fff;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        width: 44px;
+        height: 44px;
+        background-color: #fff;
+        border-radius: 50%;
+        @media (max-width: 768px) {
+            display: none;
+        }
+        &:after {
+            display: none;
+        }
+    }
+
+    .swiper-button-next {
+    }
+
+    &__item {
+        padding: 48px;
+        @media (max-width: 1200px) {
+            padding: 20px;
+        }
+        @media (max-width: 492px) {
+            padding: 12px;
+        }
+    }
+
+    &__title {
+        @extend %montserrat-800;
+        font-size: 28px;
+        line-height: 120%;
+        margin-bottom: 30px;
+        @media (max-width: 1100px) {
+            text-align: center;
+        }
+        @media (max-width: 768px) {
+            font-size: 23px;
+        }
+    }
+
+    &__item-inner {
+        @extend %flex-sb;
+        @media (max-width: 1100px) {
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+        }
+    }
+
+    &__item-imgwrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #e3edf1;
+        width: 242px;
+        height: 160px;
+        @media (max-width: 1100px) {
+            margin-bottom: 15px;
+            width: 200px;
+            height: 130px;
+        }
+        @media (max-width: 768px) {
+            width: 150px;
+            height: 90px;
+        }
+    }
+
+    &__item-img {
+        max-width: 140px;
+        max-height: 50px;
+        @media (max-width: 768px) {
+            max-width: 95%;
+            max-height: 80%;
+        }
+    }
+
+    &__item-content {
+        max-width: 695px;
+        padding-left: 15px;
+        width: 100%;
+    }
+
+    &__item-name {
+        @extend %montserrat-700;
+        font-size: 19px;
+        margin-bottom: 6px;
+    }
+
+    &__item-text {
+        margin: 22px 0 48px 0;
+        font-size: 19px;
+        @media (max-width: 1100px) {
+            margin: 15px 0 35px 0;
+        }
+        @media (max-width: 992px) {
+            font-size: 16px;
+        }
+        @media (max-width: 492px) {
+            font-size: 14px;
+        }
+    }
+
+    &__item-blanc {
+        color: $accent;
+        letter-spacing: -0.01em;
+        position: relative;
+        padding-left: 70px;
+        @media (max-width: 1100px) {
+            display: none;
+        }
+        &::before {
+            @include icon-left(54px, 70px);
+            border: 1px solid #e3edf1;
+        }
+
+        &::after {
+            @include icon-left(34px, 49px);
+            background-image: url("../images/blanc.png");
+            left: 11px;
+        }
+    }
+}

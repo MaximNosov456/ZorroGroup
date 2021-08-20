@@ -1,0 +1,182 @@
+.header {
+    @include background(center, center);
+    background-image: url("../images/header-bg.jpg");
+    min-height: 625px;
+    @media (max-width: 920px) {
+        min-height: 530px;
+    }
+    @media (max-width: 492px) {
+        padding-bottom: 40px;
+    }
+
+    &__inner {
+        padding-top: 16px;
+        @extend %flex-sb;
+        align-items: center;
+        @media (max-width: 768px) {
+        }
+    }
+
+    &__logo {
+        display: flex;
+        align-items: center;
+    }
+
+    .logo__img {
+        width: 96px;
+        height: 83px;
+        @media (max-width: 768px) {
+            width: 55px;
+            height: 43px;
+        }
+    }
+
+    &__logo-text {
+        max-width: 280px;
+        margin-left: 30px;
+        @media (max-width: 1050px) {
+            display: none;
+        }
+    }
+
+    &__contacts {
+        display: flex;
+        align-items: center;
+    }
+
+    &__phone {
+        position: relative;
+        padding-left: 32px;
+    }
+
+    &__phone-ico {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        background: #f6a219;
+        border-radius: 50px;
+        width: 24px;
+        height: 24px;
+        padding: 4px 0 0 5px;
+        @media (max-width: 768px) {
+            top: 9px;
+        }
+    }
+
+    &__phone-svg {
+        width: 15px;
+        height: 15px;
+    }
+
+    &__phone-link {
+        @extend %montserrat-800;
+        font-size: 16px;
+        margin-right: 15px;
+        @media (max-width: 768px) {
+            margin-right: 0;
+            font-size: 14px;
+        }
+    }
+
+    &__order-phone {
+        color: $accent;
+        margin-right: 40px;
+        @media (max-width: 768px) {
+            display: none;
+            margin-right: 0;
+        }
+    }
+
+    .phone-order {
+        display: none;
+        @media (max-width: 768px) {
+            display: block;
+            margin-top: 5px;
+        }
+    }
+
+    &__download {
+        @extend %montserrat-800;
+        color: #fff;
+        background: #f6a219;
+        padding: 8px 16px 8px 16px;
+        @media (max-width: 768px) {
+            display: none;
+        }
+        span {
+            position: relative;
+            padding-left: 20px;
+        }
+
+        &-ico {
+            position: absolute;
+            left: 0;
+            width: 16px;
+            height: 16px;
+            fill: #fff;
+        }
+    }
+
+    .download {
+        display: none;
+        @media (max-width: 768px) {
+            display: block;
+            margin-top: 20px;
+            max-width: 353px;
+        }
+    }
+
+    &__box {
+        display: flex;
+        justify-content: center;
+        @media (max-width: 920px) {
+            margin-top: 54px;
+        }
+        @media (max-width: 768px) {
+            justify-content: start;
+        }
+    }
+
+    &__img {
+        margin-left: 15px;
+        @media (max-width: 920px) {
+            width: 45%;
+        }
+        @media (max-width: 768px) {
+            display: none;
+        }
+    }
+
+    &__content {
+        margin-top: 80px;
+        @media (max-width: 920px) {
+            margin-top: 20px;
+        }
+    }
+
+    &__title {
+        max-width: 620px;
+        font-size: 39px;
+        line-height: 130%;
+        margin-bottom: 15px;
+        @media (max-width: 1050px) {
+            font-size: 27px;
+        }
+        @media (max-width: 768px) {
+            font-size: 22px;
+        }
+    }
+
+    &__text {
+        max-width: 446px;
+        margin-bottom: 40px;
+    }
+
+    &__btn {
+        @extend %montserrat-800;
+        color: #fff;
+        background: $accent;
+        padding: 14px 24px;
+    }
+}
